@@ -12,3 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=VT323"
     />
   </head>
+  <body>
+    <header>
+      <h1>Etch a Sketch</h1>
+    </header>
+    <main>
+      <div class= "etch-controls">
+        <div class="etch-controls__wrapper--color">
+          <label for="input--color" class="etch-controls__input-label--color">Color</label>
+          <input id="input--color" type="color" class="etch-controls__input--color"/>
+        </div>
+        <button class="etch-controls__btn--party">Party Mode</button>
+        <button id="etch-controls__btn--eraser">Eraser</button>
+        <button id="etch-controls__btn--clear">Clear All</button>
+        <div class="etch-controls__wrapper--size">
+          <input type="range" min="16" max="64" value="16" id="size-slider" class="etch-controls__input--size" />
+          <label for="size-slider" class="etch-controls__input-label--size"></label>
+        </div>
+      </div>
+      <div class="etch-grid"></div>
+    </main>
+    <footer>Made by Michal Kay</footer>
+  </body>
+  </html>
