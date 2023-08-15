@@ -8,3 +8,5 @@ function createGridItems(amount) {
     wrapper.appendChild(div);
   }
 }
+
+export default createGridItems;
