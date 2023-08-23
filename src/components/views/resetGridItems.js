@@ -5,3 +5,5 @@ function resetGridItems() {
   gridItems.forEach((gridItem) => {
       gridItem.setAttribute("style", "background-color: white") 
 })}
+
+export default resetGridItems;
