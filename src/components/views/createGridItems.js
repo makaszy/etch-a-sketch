@@ -1,5 +1,4 @@
 
-
 /* Create grid-items for the grid */
 
 function createGridItems(size) {
