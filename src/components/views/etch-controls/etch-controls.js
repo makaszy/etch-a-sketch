@@ -18,6 +18,15 @@ partyBtn.addEventListener("click", () => {partyBtnPubSub.publish("party")})
 
 const eraserBtnPubSub = new PubSub();
 const eraserBtn = document.querySelector(".etch-controls__btn--eraser");
+
 eraserBtn.addEventListener("click", () => {eraserBtnPubSub.publish("#FFFFFF")})
 
-export {colorInputPubSub, partyBtnPubSub, eraserBtnPubSub};
+//Clear button
+
+const clearBtnPubSub = new PubSub();
+const clearBtn = document.querySelector(".etch-controls__btn--clear");
+
+clearBtn.addEventListener("click", () => {clearBtnPubSub.publish()})
+
+export {colorInputPubSub, partyBtnPubSub, eraserBtnPubSub, clearBtnPubSub};
+
