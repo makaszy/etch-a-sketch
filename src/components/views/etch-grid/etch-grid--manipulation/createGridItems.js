@@ -1,5 +1,4 @@
-
-/* Create grid-items for the grid */
+// Create grid-items for the grid. Used when grid is originally created and when grid is being resized.
 
 function createGridItems(size) {
   if (+size === NaN) {

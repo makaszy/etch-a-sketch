@@ -1,7 +1,8 @@
-import getRandomHex from "../utils/genRandomHex"
-import isValidHex from "../utils/isValidHex";
+import getRandomHex from "../../../utils/genRandomHex"
+import isValidHex from "../../../utils/isValidHex";
 
-//Add hover functionality to the grid and color.
+//Adds hover functionality that changes the background color upon mouseover event. Accepts HEX colors, or the string party.
+
 function activateGrid(color) {
   if (!isValidHex(color) || color !== "party") {
     throw new Error("Invalid Input: Input has to be a valid hex, or the string 'party'")
