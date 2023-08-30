@@ -11,6 +11,13 @@ colorInput.addEventListener("input", () => {colorInputPubSub.publish(colorInput.
 
 const partyBtnPubSub = new PubSub();
 const partyBtn = document.querySelector(".etch-controls__btn--party");
+
 partyBtn.addEventListener("click", () => {partyBtnPubSub.publish("party")})
 
-export {colorInputPubSub, partyBtnPubSub};
+//Eraser button
+
+const eraserBtnPubSub = new PubSub();
+const eraserBtn = document.querySelector(".etch-controls__btn--eraser");
+eraserBtn.addEventListener("click", () => {eraserBtnPubSub.publish("#FFFFFF")})
+
+export {colorInputPubSub, partyBtnPubSub, eraserBtnPubSub};
