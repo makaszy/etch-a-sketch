@@ -4,7 +4,6 @@ import isValidHex from "../../../utils/isValidHex";
 //Adds hover functionality that changes the background color upon mouseover event. Accepts HEX colors, or the string party.
 
 function activateGridItems(color) {
-  console.log("yoo")
   if (!isValidHex(color) && color !== "party") {
     throw new Error("Invalid Input: Input has to be a valid hex, or the string 'party'")
   }

@@ -1,4 +1,5 @@
 import activateGridItems from "./etch-grid--manipulation/activateGridItems";
-import { colorInputPubSub } from "../etch-controls/etch-controls";
+import { colorInputPubSub , partyBtnPubSub } from "../etch-controls/etch-controls";
 
-colorInputPubSub.subscribe(activateGridItems)
+colorInputPubSub.subscribe(activateGridItems);
+partyBtnPubSub.subscribe(activateGridItems); 
