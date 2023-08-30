@@ -1,15 +1,15 @@
 .etch-grid__grid-item {
   border: solid 1px black;
   margin: 0px;
-  
 }
 
 .etch-grid {
   display: grid;
   width: 600px;
   height: 600px;
-  border: #14213dff 2px solid;
+  border: #14213d 2px solid;
   display: grid;
-  background-color: #ffffffff;
-
+  background-color: white;
 }
+
+/*# sourceMappingURL=output.css.map */
