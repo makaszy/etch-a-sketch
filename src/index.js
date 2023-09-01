@@ -2,4 +2,3 @@ import createGridItems from "./components/views/etch-grid/etch-grid--manipulatio
 import "./components/views/etch-controls/etch-controls";
 import "./components/views/etch-grid/etch-grid";
 
-createGridItems(16);

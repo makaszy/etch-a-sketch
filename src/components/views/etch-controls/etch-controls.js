@@ -28,5 +28,12 @@ const clearBtn = document.querySelector(".etch-controls__btn--clear");
 
 clearBtn.addEventListener("click", () => {clearBtnPubSub.publish()})
 
-export {colorInputPubSub, partyBtnPubSub, eraserBtnPubSub, clearBtnPubSub};
+//Size input
+
+const sizeInputPubSub = new PubSub();
+const sizeInput = document.querySelector(".etch-controls__input--size");
+
+sizeInput.addEventListener("input", () => {sizeInputPubSub.publish(sizeInput.value)})
+
+export {colorInputPubSub, partyBtnPubSub, eraserBtnPubSub, clearBtnPubSub, sizeInputPubSub};
 
