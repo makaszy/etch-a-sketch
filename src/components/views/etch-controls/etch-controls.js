@@ -1,9 +1,8 @@
 import PubSub from "../../utils/pubSub";
 
-const colorPubSub = new PubSub();
-
 //Color inputs
 
+const colorPubSub = new PubSub();
 const colorInput = document.querySelector(".etch-controls__input--color");
 const partyBtn = document.querySelector(".etch-controls__btn--party");
 const eraserBtn = document.querySelector(".etch-controls__btn--eraser");
