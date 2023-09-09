@@ -1,20 +1,20 @@
+@import "../themes/background-theme.scss";
+@import "../themes/border.scss";
 
 .etch-controls {
-  height: 600px;
-  width: 250px;
-  background-color: #e5e5e5ff;
+  @extend %secondary-background;
+  @extend %standard-border;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 10px;
   border-radius: 20px;
-  border: #14213dff 2px solid;
-  background-color: #f1faee;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #f1faee 40px
-    ),
-    repeating-linear-gradient(#a8dadc55, #a8dadc);
+  }
+
+
+.loc-etch-controls {
+  height: 600px;
+  width: 250px;
 }

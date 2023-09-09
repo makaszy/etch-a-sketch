@@ -1,8 +1,10 @@
+@import "../themes/colors.scss";
+
 .header__title {
   width: 300px;
   margin: 100px auto;
   font-size: 48px;
-  color: #14213dff;
-  text-decoration: #14213dff underline solid;
+  color: $title-color;
+  text-decoration: $title-color underline solid;
   font-family: Georgia, "Times New Roman", Times, serif;
 }

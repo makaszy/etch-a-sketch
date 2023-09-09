@@ -4,11 +4,11 @@ import { colorPubSub } from "../../etch-controls/etch-controls";
 let currentInput = {
   col: "#000000",
 
-  setColor(value) {
+  setColor(color) {
     if (!isValidHex(color) && color !== "party") {
       throw new Error("Invalid Input: set currentInput color failed")
     }
-    this.col = value;
+    this.col = color;
   },
 
   get color() {

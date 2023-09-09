@@ -1,0 +1,5 @@
+@import "./colors.scss";
+
+%standard-border {
+  border: $border-color 2px solid;
+}

@@ -1,10 +1,22 @@
-:root {
-  background-color: #f1faee;
+@import "./colors.scss";
+
+
+%main-background {
   background: repeating-linear-gradient(
     -45deg,
-    #a8dadc,
-    #a8dadc 250px,
-    #f1faee 40px,
-    #f1faee 1800px
+    $theme-color-1,
+    $theme-color-1 250px,
+    $theme-color-2 40px,
+    $theme-color-2 1800px
   );
+  background-color: $theme-color-2;
+}
+
+%secondary-background {
+  background: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      $theme-color-1 40px
+    ), repeating-linear-gradient($theme-color-3, $theme-color-2);
+  background-color: $theme-color-2;
 }

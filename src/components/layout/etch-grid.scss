@@ -1,0 +1,12 @@
+@import "../themes/border.scss";
+
+.etch-grid {
+  @extend %standard-border;
+  background-color: $etch-grid-background-color;
+  display: grid;
+}
+
+.loc-etch-grid {
+  width: 600px;
+  height: 600px;
+}

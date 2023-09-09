@@ -1,18 +1,17 @@
 @import "./components/themes/background-theme.scss";
+@import "./components/layout/etch-controls.scss";
+@import "./components/themes/colors.scss"; 
+@import "./components/layout/header.scss";
+@import "./components/layout/etch-grid.scss";
+:root {
+  @extend %main-background;
+}
+
 
 .etch-grid__grid-item {
-  border: solid 1px black;
+  border: solid 1px $black;
   margin: 0px;
-  
 }
 
-.etch-grid {
-  display: grid;
-  width: 600px;
-  height: 600px;
-  border: #14213dff 2px solid;
-  display: grid;
-  background-color: #ffffffff;
 
-}
 
