@@ -3,14 +3,11 @@
 @import "./components/themes/colors.scss"; 
 @import "./components/layout/header.scss";
 @import "./components/layout/etch-grid.scss";
+@import "./components/layout/main.scss";
+
 :root {
   @extend %main-background;
-}
-
-
-.etch-grid__grid-item {
-  border: solid 1px $black;
-  margin: 0px;
+  height: 100vh;
 }
 
 

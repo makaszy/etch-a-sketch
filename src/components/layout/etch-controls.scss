@@ -1,10 +1,9 @@
 @import "../themes/background-theme.scss";
 @import "../themes/border.scss";
+@import "../themes/colors.scss";
 
 .etch-controls {
   @extend %secondary-background;
-  @extend %standard-border;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -13,8 +12,57 @@
   border-radius: 20px;
   }
 
-
 .loc-etch-controls {
   height: 600px;
   width: 250px;
+}
+
+.loc-etch-controls__btn {
+  @include standard-border;
+  border-radius: 15px;
+  min-width: 125px;
+  padding: 10px;
+}
+
+.etch-controls__btn {
+  background-color: $theme-color-1;
+  color: $border-color;
+} 
+
+.etch-controls__wrapper--color {
+  @include standard-border($radius: 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.loc-etch-controls__input--color {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
+.etch-controls__input--size { 
+  appearance: none;
+  background-color: $dark-blue;  
+}
+
+.loc-etch-controls__input--size {
+  @extend %small-border;
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 5px;
+}
+
+.etch-controls__input--size::-webkit-slider-thumb {
+  @extend %small-border;
+  width: 10px;
+  height: 25px;
+  appearance: none;
+  background-color: $theme-color-1;
 }

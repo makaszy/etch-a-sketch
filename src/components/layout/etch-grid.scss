@@ -1,7 +1,7 @@
 @import "../themes/border.scss";
 
 .etch-grid {
-  @extend %standard-border;
+  @include standard-border($radius: 0px);
   background-color: $etch-grid-background-color;
   display: grid;
 }
@@ -10,3 +10,10 @@
   width: 600px;
   height: 600px;
 }
+
+.etch-grid__grid-item {
+  border: solid 1px $black;
+  margin: 0px;
+}
+
+

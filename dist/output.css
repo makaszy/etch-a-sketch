@@ -1,25 +1,30 @@
-:root {
-  background: repeating-linear-gradient(-45deg, #a8dadc, #a8dadc 250px, #f1faee 40px, #f1faee 1800px);
-  background-color: #f1faee;
-}
-
-.etch-controls {
-  background: repeating-radial-gradient(circle at 0 0, transparent 0, #a8dadc 40px), repeating-linear-gradient(rgba(168, 218, 220, 0.3333333333), #f1faee);
+.etch-controls, :root {
   background-color: #f1faee;
 }
 
 :root {
   background: repeating-linear-gradient(-45deg, #a8dadc, #a8dadc 250px, #f1faee 40px, #f1faee 1800px);
-  background-color: #f1faee;
 }
 
 .etch-controls {
   background: repeating-radial-gradient(circle at 0 0, transparent 0, #a8dadc 40px), repeating-linear-gradient(rgba(168, 218, 220, 0.3333333333), #f1faee);
+}
+
+:root, .etch-controls {
   background-color: #f1faee;
 }
 
-.etch-grid, .etch-controls {
-  border: #14213d 2px solid;
+:root {
+  background: repeating-linear-gradient(-45deg, #a8dadc, #a8dadc 250px, #f1faee 40px, #f1faee 1800px);
+}
+
+.etch-controls {
+  background: repeating-radial-gradient(circle at 0 0, transparent 0, #a8dadc 40px), repeating-linear-gradient(rgba(168, 218, 220, 0.3333333333), #f1faee);
+}
+
+.etch-controls__input--size::-webkit-slider-thumb, .loc-etch-controls__input--size {
+  border: #14213d 1px solid;
+  border-radius: 15px;
 }
 
 .etch-controls {
@@ -36,6 +41,56 @@
   width: 250px;
 }
 
+.loc-etch-controls__btn {
+  border: #14213d 2px solid;
+  border-radius: 15px;
+  border-radius: 15px;
+  min-width: 125px;
+  padding: 10px;
+}
+
+.etch-controls__btn {
+  background-color: #a8dadc;
+  color: #14213d;
+}
+
+.etch-controls__wrapper--color {
+  border: #14213d 2px solid;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.loc-etch-controls__input--color {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
+.etch-controls__input--size {
+  appearance: none;
+  background-color: #14213d;
+}
+
+.loc-etch-controls__input--size {
+  display: block;
+  margin: auto;
+  width: 75%;
+  height: 5px;
+}
+
+.etch-controls__input--size::-webkit-slider-thumb {
+  width: 10px;
+  height: 25px;
+  appearance: none;
+  background-color: #a8dadc;
+}
+
 .header__title {
   width: 300px;
   margin: 100px auto;
@@ -45,11 +100,14 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.etch-grid, .etch-controls {
-  border: #14213d 2px solid;
+.loc-etch-controls__input--size, .etch-controls__input--size::-webkit-slider-thumb {
+  border: #14213d 1px solid;
+  border-radius: 15px;
 }
 
 .etch-grid {
+  border: #14213d 2px solid;
+  border-radius: 0px;
   background-color: white;
   display: grid;
 }
@@ -62,6 +120,17 @@
 .etch-grid__grid-item {
   border: solid 1px #000000;
   margin: 0px;
+}
+
+main {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=output.css.map */

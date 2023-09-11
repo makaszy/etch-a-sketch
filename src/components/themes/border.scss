@@ -1,5 +1,11 @@
 @import "./colors.scss";
 
-%standard-border {
+@mixin standard-border($radius: 15px) {
   border: $border-color 2px solid;
+  border-radius: $radius;
+}
+
+%small-border {
+  border: $border-color 1px solid ;
+  border-radius: 15px;
 }
