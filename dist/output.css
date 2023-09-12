@@ -129,6 +129,12 @@ main {
   align-items: center;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   height: 100vh;
 }
