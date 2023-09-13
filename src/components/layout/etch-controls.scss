@@ -8,13 +8,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
   border-radius: 20px;
   }
 
 .loc-etch-controls {
-  height: 600px;
-  width: 250px;
+  padding: 5%;
 }
 
 .loc-etch-controls__btn {
@@ -65,4 +64,12 @@
   height: 25px;
   appearance: none;
   background-color: $theme-color-1;
+}
+
+@media only screen and (max-width: 990px) {
+
+  .loc-etch-controls__btn {
+    min-width: 90px;
+  }
+
 }
