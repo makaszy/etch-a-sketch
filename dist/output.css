@@ -91,9 +91,14 @@
   background-color: #a8dadc;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
 .header__title {
-  width: 300px;
-  margin: 100px auto;
   font-size: 48px;
   color: #14213d;
   text-decoration: #14213d underline solid;

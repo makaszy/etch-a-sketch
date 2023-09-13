@@ -1,8 +1,13 @@
 @import "../themes/colors.scss";
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
 .header__title {
-  width: 300px;
-  margin: 100px auto;
   font-size: 48px;
   color: $title-color;
   text-decoration: $title-color underline solid;
