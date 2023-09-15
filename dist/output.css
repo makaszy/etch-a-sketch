@@ -1,5 +1,5 @@
 .etch-controls, :root {
-  background-color: #f1faee;
+  background-color: #f1faee !important;
 }
 
 :root {
@@ -11,7 +11,7 @@
 }
 
 :root, .etch-controls {
-  background-color: #f1faee;
+  background-color: #f1faee !important;
 }
 
 :root {
@@ -38,6 +38,10 @@
 
 .loc-etch-controls {
   padding: 5%;
+}
+
+.loc-etch-controls__btn--hide {
+  display: none;
 }
 
 .loc-etch-controls__btn {
@@ -91,8 +95,23 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .loc-etch-controls__btn {
-    min-width: 90px;
+  .loc-etch-controls {
+    position: absolute;
+  }
+  .loc-etch-controls__btn--hide {
+    border: #14213d 2px solid;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .etch-controls__btn--hide {
+    appearance: none;
+    font-weight: bolder;
+    background-color: #f1faee;
   }
 }
 .header {

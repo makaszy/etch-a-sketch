@@ -2,7 +2,7 @@
 
 
 %background-color {
-  background-color: $theme-color-2;
+  background-color: $theme-color-2 !important;
 }
 
 %main-background {
@@ -23,4 +23,4 @@
       transparent 0,
       $theme-color-1 40px
     ), repeating-linear-gradient($theme-color-3, $theme-color-2);
-}
+  }
