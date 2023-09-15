@@ -1,3 +1,6 @@
+@import "../themes/border.scss";
+@import "../themes/colors.scss";
+
 .main {
   display: flex;
   gap: 10%;
@@ -5,9 +8,33 @@
   align-items: center;
 }
 
+.main__btn--display-etch-controls {
+  display: none;
+}
+
 @media only screen and (max-width: 990px) {
 
   .main {
     gap: 5%;
-  } 
+  }
+  
+  .main__btn--display-etch-controls {
+    display: block;
+    appearance: none;
+    background-color: $theme-color-2;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .loc-main__btn--display-etch-controls {
+    @include standard-border($radius: 50%);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  
+  
 }

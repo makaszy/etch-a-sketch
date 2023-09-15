@@ -150,6 +150,11 @@
   margin: 0px;
 }
 
+.loc-etch-controls__input--size, .etch-controls__input--size::-webkit-slider-thumb {
+  border: #14213d 1px solid;
+  border-radius: 15px;
+}
+
 .main {
   display: flex;
   gap: 10%;
@@ -157,9 +162,29 @@
   align-items: center;
 }
 
+.main__btn--display-etch-controls {
+  display: none;
+}
+
 @media only screen and (max-width: 990px) {
   .main {
     gap: 5%;
+  }
+  .main__btn--display-etch-controls {
+    display: block;
+    appearance: none;
+    background-color: #f1faee;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .loc-main__btn--display-etch-controls {
+    border: #14213d 2px solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
   }
 }
 footer {
