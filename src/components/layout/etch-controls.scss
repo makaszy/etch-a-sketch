@@ -32,6 +32,15 @@
   color: $border-color;
 } 
 
+.etch-controls__btn:active {
+  transform: scale(0.95);
+} 
+
+.etch-controls__btn:hover {
+  transform: scale(0.95);
+}
+
+
 .etch-controls__wrapper--color {
   @include standard-border($radius: 100%);
   width: 80px;
