@@ -74,6 +74,7 @@
 
   .loc-etch-controls {
     position: absolute;
+    display: none;
   }
   .loc-etch-controls__btn--hide {
     @include standard-border($radius: 50%);

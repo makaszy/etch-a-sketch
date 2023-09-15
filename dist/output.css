@@ -97,6 +97,7 @@
 @media only screen and (max-width: 990px) {
   .loc-etch-controls {
     position: absolute;
+    display: none;
   }
   .loc-etch-controls__btn--hide {
     border: #14213d 2px solid;

@@ -28,5 +28,22 @@ const sizeInput = document.querySelector(".etch-controls__input--size");
 
 sizeInput.addEventListener("input", () => {sizeInputPubSub.publish(sizeInput.value)})
 
+
+//Etch controls hide btn
+
+const etchControls = document.querySelector(".etch-controls");
+const etchControlsDisplayBtn = document.querySelector(".main__btn--display-etch-controls");
+const etchControlsHideBtn = document.querySelector(".etch-controls__btn--hide")
+
+etchControlsDisplayBtn.addEventListener("click", () => {
+  etchControls.setAttribute("style", "display: flex !important");
+})
+
+
+etchControlsHideBtn.addEventListener("click", () => {
+  etchControls.setAttribute("style", "display: none !important");
+})
+
+
 export {colorPubSub, clearBtnPubSub, sizeInputPubSub};
 
