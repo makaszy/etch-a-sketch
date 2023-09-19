@@ -22,7 +22,7 @@
     display: block;
     appearance: none;
     background-color: $theme-color-2;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: bolder;
   }
 
@@ -31,8 +31,8 @@
     position: absolute;
     bottom: 25px;
     right: 25px;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
 
   .main__btn--display-etch-controls:focus {
@@ -43,6 +43,16 @@
     transform: scale(0.95);
   }
   
+}
+
+@media only screen and (max-width: 700px) {
+  .loc-main__btn--display-etch-controls {
+    width: 50px;
+    height: 50px;
+  }
+  .main__btn--display-etch-controls {
+    font-size: 25px;
+  }
 
 
 }
